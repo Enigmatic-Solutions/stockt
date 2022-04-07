@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.MainActivity">
+
+    <Button
+        android:id="@+id/btnIssueView"
+        android:layout_width="141dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="48dp"
+        android:text="IssueView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIssue" />
+
+    <Button
+        android:id="@+id/btnStockView"
+        android:layout_width="142dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:text="Stock View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <Button
+        android:id="@+id/btnIssue"
+        android:layout_width="138dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="32dp"
+        android:text="Issue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="141dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
