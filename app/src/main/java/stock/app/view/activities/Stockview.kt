@@ -35,40 +35,23 @@ class Stockview : AppCompatActivity() {
         binding= ActivityStockviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-       //lateinit var data: <List<Stock>>
 
         mstockViewModel = ViewModelProvider(this).get(StockViewModel::class.java)
 
-        //lateinit var stktest: MutableLiveData<List<Stock>>
-        mstockViewModel.getAllStock()
-        //var stktest:List<Stock> = mstockViewModel.getRecordObserver():List<Stock>
-        var stk: Stock
-        stk= Stock(0,"Test Item1",62,"//file")
-        mstockViewModel.InsertStock(stk)
 
+        mstockViewModel.getAllStock()
+        
         val linearLayoutManager = LinearLayoutManager(
             this, RecyclerView.VERTICAL,false)
         binding.recyclestock.layoutManager = linearLayoutManager
 
 
-        //binding.textView.text= binding.recyclestock.adapter?.itemCount.toString()
 
-        try {
             mstockViewModel.getRecordObserver().observe(this, androidx.lifecycle.Observer { Stock ->
                 binding.recyclestock.adapter =StockAdapter(Stock)
-
-//                data.value = Stock
-//                da = Stock!!
-//                Log.d("MainActivity ", "Data Send" + data.value!!.size.toString())
-//                binding.recyclestock.adapter = StockAdapter(Stock)
             })
 
-        }catch (Ex:Exception)
-        {
-            //Toast.makeText(applicationContext, da[0].toString(), Toast.LENGTH_LONG).show()
-            //Toast.show()
 
-        }
 
 
     }

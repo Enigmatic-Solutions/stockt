@@ -14,7 +14,7 @@ import stock.app.data.db.Stock
 import javax.inject.Inject
 
 
-class StockAdapter @Inject constructor(val item: List<Stock>):RecyclerView.Adapter<StockAdapter.StockViewHolder>() {
+class StockAdapter @Inject constructor(var item: List<Stock>):RecyclerView.Adapter<StockAdapter.StockViewHolder>() {
  //private lateinit
 //private lateinit var item:ArrayList<Stock>
 
@@ -24,13 +24,11 @@ class StockAdapter @Inject constructor(val item: List<Stock>):RecyclerView.Adapt
 
     }
 
+    fun setData(data: List<Stock>) {
+        item = data
+        notifyDataSetChanged()
+    }
 
-//    fun setListData(data:MutableLiveData<List<Stock>>){
-//        val tasks: MutableLiveData<out List<Stock>> = data
-//
-//        item=tasks
-//
-//    }
 
     override fun onBindViewHolder(holder: StockViewHolder, position: Int) {
 
