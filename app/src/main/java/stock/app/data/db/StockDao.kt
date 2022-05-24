@@ -15,7 +15,7 @@ suspend fun insertStock(stock: Stock)
 
 
 @Query("select * from Stock")
- suspend fun getAllStockItems(): List<Stock>
+suspend fun getAllStockItems(): List<Stock>
 
 
 }

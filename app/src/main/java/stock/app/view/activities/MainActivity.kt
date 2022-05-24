@@ -27,6 +27,13 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
+        binding.btnStockView.setOnClickListener{
+            val intent = Intent(this, Stockview::class.java)
+
+            startActivity(intent)
+        }
+
     }
 
 

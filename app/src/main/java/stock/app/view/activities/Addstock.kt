@@ -82,6 +82,7 @@ class Addstock : AppCompatActivity() {
         stk= Stock(0,binding.editItemName.text.toString(),binding.editQty.text.toString().toInt(),imgPath)
 
 
+
             mstockViewModel.InsertStock(stk)
             binding.editItemName.setText("")
             binding.editQty.setText("")

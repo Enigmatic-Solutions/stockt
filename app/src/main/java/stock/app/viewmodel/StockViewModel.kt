@@ -34,10 +34,6 @@ class StockViewModel @Inject internal constructor (private val stockRepository:S
             val list=stockRepository.getAllStock()
             allstock.postValue(list)
         }
-
-
-
-
     }
 
 

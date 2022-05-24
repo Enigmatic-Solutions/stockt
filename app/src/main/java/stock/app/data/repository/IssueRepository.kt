@@ -8,5 +8,4 @@ class IssueRepository @Inject constructor (private val issuedao:IssueDao) {
 
 
 
-
 }

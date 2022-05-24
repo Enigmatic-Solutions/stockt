@@ -14,7 +14,7 @@ class StockRepository @Inject constructor (private val dao:StockDao) {
          dao.insertStock(stock)
     }
 
-   suspend fun getAllStock(): List<Stock> {
+  suspend fun getAllStock(): List<Stock> {
 
         return dao.getAllStockItems()
     }

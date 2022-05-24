@@ -54,4 +54,5 @@ class App : Application() {
 //        //kp=MovieDatabase.getInstance(this)
 //        INSTANCE = this
 //    }
+
 }
