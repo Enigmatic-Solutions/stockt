@@ -34,7 +34,7 @@ class StockAdapter @Inject constructor(val item: List<Stock>):RecyclerView.Adapt
 
     override fun onBindViewHolder(holder: StockViewHolder, position: Int) {
 
-        val ItemsViewModel = item[1]
+        val ItemsViewModel = item[position]
 
         holder.tvitem.text=ItemsViewModel.itemName
         holder.tvbalance.text=ItemsViewModel.stockBal.toString()
@@ -46,8 +46,8 @@ class StockAdapter @Inject constructor(val item: List<Stock>):RecyclerView.Adapt
     }
 
     inner class StockViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-        val tvitem: TextView = itemView.findViewById(R.id.tvItem)
-        val tvbalance: TextView = itemView.findViewById(R.id.tvBalance)
+        val tvitem: TextView = itemView.findViewById(R.id.tvName)
+        val tvbalance: TextView = itemView.findViewById(R.id.tvQty)
 
 
 
