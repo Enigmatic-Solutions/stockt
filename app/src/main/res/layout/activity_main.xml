@@ -6,12 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".view.activities.MainActivity">
 
+    <include layout="@layout/toolbar"/>
+
+
     <Button
         android:id="@+id/btnIssueView"
         android:layout_width="141dp"
         android:layout_height="102dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="120dp"
         android:text="IssueView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnIssue" />
@@ -20,8 +23,8 @@
         android:id="@+id/btnStockView"
         android:layout_width="142dp"
         android:layout_height="107dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
         android:text="Stock View"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
@@ -31,7 +34,7 @@
         android:layout_width="138dp"
         android:layout_height="111dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="120dp"
         android:text="Issue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,8 +43,8 @@
         android:id="@+id/btnAdd"
         android:layout_width="141dp"
         android:layout_height="112dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
         android:text="Add"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

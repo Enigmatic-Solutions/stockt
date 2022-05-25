@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dagger.hilt.android.AndroidEntryPoint
 import stock.app.data.db.Stock
-import org.jetbrains.anko.doAsync
+//import org.jetbrains.anko.doAsync
 import java.util.*
 
 import stock.app.databinding.ActivityStockviewBinding
@@ -65,10 +65,6 @@ class Stockview : AppCompatActivity() {
 
 
     }
-
-
-
-
 
 
 }

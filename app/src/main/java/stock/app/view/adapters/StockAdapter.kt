@@ -27,18 +27,8 @@ class StockAdapter @Inject constructor(var item: List<Stock>):RecyclerView.Adapt
 
         _context=parent.context
 
-
-
-
-
         return StockViewHolder(view)
 
-
-    }
-
-    fun setData(data: List<Stock>) {
-        item = data
-        notifyDataSetChanged()
     }
 
 
@@ -53,8 +43,6 @@ class StockAdapter @Inject constructor(var item: List<Stock>):RecyclerView.Adapt
             Toast.makeText(_context,"Hello",50).show()
         }
 
-
-
     }
 
     override fun getItemCount(): Int {
@@ -64,9 +52,6 @@ class StockAdapter @Inject constructor(var item: List<Stock>):RecyclerView.Adapt
     inner class StockViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         val tvitem: TextView = itemView.findViewById(R.id.tvName)
         val tvbalance: TextView = itemView.findViewById(R.id.tvQty)
-
-
-
 
     }
 
