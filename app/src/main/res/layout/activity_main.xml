@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-   <include layout="@layout/customtoolbar"/>
+   <include android:id="@+id/tool_bar" layout="@layout/customtoolbar"/>
+
     <Button
         android:id="@+id/btnIssueView"
         android:layout_width="141dp"
@@ -63,12 +64,6 @@
             app:headerLayout="@layout/nav_header"
             app:menu="@menu/nav_menu"
             android:id="@+id/navView"/>
-
-
-
-
-
-
 
 
 
