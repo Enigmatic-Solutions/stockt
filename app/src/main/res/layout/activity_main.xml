@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <include layout="@layout/toolbar"/>
+   <include layout="@layout/customtoolbar"/>
     <Button
         android:id="@+id/btnIssueView"
         android:layout_width="141dp"
@@ -54,12 +54,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
 
         <com.google.android.material.navigation.NavigationView
             android:layout_width="wrap_content"

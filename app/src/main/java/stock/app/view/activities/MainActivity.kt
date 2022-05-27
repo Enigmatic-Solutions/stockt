@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import dagger.hilt.android.AndroidEntryPoint
+import org.jetbrains.anko.toolbar
 import stock.app.R
 import stock.app.databinding.ActivityMainBinding
 
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        //supportActionBar(customtoolbar)
 
         val toolbar_img1:ImageView=findViewById(R.id.menu_icon)
         val toolbar_img2:ImageView=findViewById(R.id.login_icon)
@@ -61,17 +62,19 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        val drawyerLayout:DrawerLayout=findViewById(R.id.drawerlayout)
+        val navView:NavigationView=findViewById(R.id.navView)
 
+        toggle= ActionBarDrawerToggle(this,drawyerLayout,R.string.open,R.string.close)
+
+        Toast.makeText(this,"Menu Icon Selected",Toast.LENGTH_SHORT).show()
+        drawyerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+
+        //supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
 
         toolbar_img1.setOnClickListener{
-            val drawyerLayout:DrawerLayout=findViewById(R.id.drawerlayout)
-            val navView:NavigationView=findViewById(R.id.navView)
 
-            toggle= ActionBarDrawerToggle(this,drawyerLayout,R.string.open,R.string.close)
-
-            Toast.makeText(this,"Menu Icon Selected",Toast.LENGTH_SHORT).show()
-            drawyerLayout.addDrawerListener(toggle)
-            toggle.syncState()
         }
 
 
