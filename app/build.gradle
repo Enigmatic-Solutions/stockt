@@ -93,5 +93,9 @@ dependencies {
     implementation "org.jetbrains.anko:anko:$anko_version"
 
 
+    // circle image to show in recyclerviews
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
 
 }

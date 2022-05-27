@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="home"
+        android:icon="@drawable/ic_nav_home_24"/>
+
+    <item
+        android:id="@+id/location"
+        android:title="Store Location"
+        android:icon="@drawable/ic_nav_location"/>
+
+    <item
+        android:id="@+id/nav_stock"
+        android:title="Stock"
+        android:icon="@drawable/ic_nav_stock_24"/>
+
+    <item android:title="Information">
+        <menu>
+            <item
+                android:id="@+id/nav_documents"
+                android:title="Documents"
+                android:icon="@drawable/ic_nav_document_24"/>
+            <item
+                android:id="@+id/nav_reports"
+                android:title="Reports"
+                android:icon="@drawable/ic_nav_report_24"/>
+        </menu>
+    </item>
+
+
+
+
+</menu>

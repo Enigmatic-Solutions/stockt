@@ -3,18 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/stockt/app/src/main/res/drawable/ic_baseline_assignment_ind_24.xml" value="0.1805" />
-        <entry key="..\:/Android/stockt/app/src/main/res/drawable/ic_baseline_dehaze_24.xml" value="0.1805" />
         <entry key="..\:/Android/stockt/app/src/main/res/drawable/ic_launcher_background.xml" value="0.10833333333333334" />
+        <entry key="..\:/Android/stockt/app/src/main/res/drawable/ic_login_24.xml" value="0.217" />
         <entry key="..\:/Android/stockt/app/src/main/res/drawable/ic_plus.xml" value="0.10833333333333334" />
         <entry key="..\:/Android/stockt/app/src/main/res/drawable/item_delete.xml" value="0.10833333333333334" />
         <entry key="..\:/Android/stockt/app/src/main/res/drawable/save_item.xml" value="0.1" />
         <entry key="..\:/Android/stockt/app/src/main/res/layout/activity_addissue.xml" value="0.25416666666666665" />
         <entry key="..\:/Android/stockt/app/src/main/res/layout/activity_addstock.xml" value="0.25416666666666665" />
         <entry key="..\:/Android/stockt/app/src/main/res/layout/activity_issueview.xml" value="0.24010416666666667" />
-        <entry key="..\:/Android/stockt/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/stockt/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/Android/stockt/app/src/main/res/layout/activity_stockview.xml" value="0.25416666666666665" />
-        <entry key="..\:/Android/stockt/app/src/main/res/layout/toolbar.xml" value="0.1" />
+        <entry key="..\:/Android/stockt/app/src/main/res/layout/nav_header.xml" value="0.24003623188405798" />
+        <entry key="..\:/Android/stockt/app/src/main/res/layout/stock_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/stockt/app/src/main/res/layout/toolbar.xml" value="0.24003623188405798" />
+        <entry key="..\:/Android/stockt/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/stockt/app/src/main/res/menu/nav_menu.xml" value="0.264" />
       </map>
     </option>
   </component>
