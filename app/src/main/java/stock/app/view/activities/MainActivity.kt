@@ -1,20 +1,17 @@
 package stock.app.view.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import dagger.hilt.android.AndroidEntryPoint
-import org.jetbrains.anko.toolbar
 import stock.app.R
 import stock.app.databinding.ActivityMainBinding
-
 
 
 @AndroidEntryPoint
@@ -55,7 +52,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnStockView.setOnClickListener{
             val intent = Intent(this, Stockview::class.java)
-
             startActivity(intent)
         }
 
@@ -63,8 +59,10 @@ class MainActivity : AppCompatActivity() {
         val drawyerLayout:DrawerLayout=findViewById(R.id.drawerlayout)
         val navView:NavigationView=findViewById(R.id.navView)
 
+//        for (i in 0 until navView.getChildCount()) {
+//            navView.getChildAt(i).setOverScrollMode(View.OVER_SCROLL_NEVER)
+//        }
 
-        //supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
 
         toolbar_img1.setOnClickListener{
             drawyerLayout.open()
@@ -74,8 +72,8 @@ class MainActivity : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.nav_home -> Toast.makeText(this,"Home Icon Selected",Toast.LENGTH_SHORT).show()
-                R.id.nav_stock -> Toast.makeText(this,"Stock Icon Selected",Toast.LENGTH_SHORT).show()
+                R.id.nav_prod -> Toast.makeText(this,"Home Icon Selected",Toast.LENGTH_SHORT).show()
+                R.id.nav_stocktaking -> Toast.makeText(this,"Stock Icon Selected",Toast.LENGTH_SHORT).show()
             }
 
             true

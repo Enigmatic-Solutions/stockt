@@ -3,35 +3,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <group android:id="@+id/line1">
     <item
-        android:id="@+id/nav_home"
-        android:title="home"
+        android:id="@+id/nav_menu_location"
+        android:title="Location"
         android:icon="@drawable/ic_nav_home_24"/>
 
     <item
         android:id="@+id/location"
-        android:title="Store Location"
-        android:icon="@drawable/ic_nav_location"/>
-
-    <item
-        android:id="@+id/nav_stock"
         android:title="Stock"
-        android:icon="@drawable/ic_nav_stock_24"/>
+        android:icon="@drawable/ic_nav_location"/>
+    </group>
 
-    <item android:title="Information">
-        <menu>
-            <item
-                android:id="@+id/nav_documents"
-                android:title="Documents"
-                android:icon="@drawable/ic_nav_document_24"/>
-            <item
-                android:id="@+id/nav_reports"
-                android:title="Reports"
-                android:icon="@drawable/ic_nav_report_24"/>
-        </menu>
-    </item>
+    <group android:id="@+id/line2">
+        <item
+            android:id="@+id/nav_DOC"
+            android:title="Documennt"
+            android:icon="@drawable/ic_nav_home_24"/>
 
+        <item
+            android:id="@+id/REP"
+            android:title="Reports"
+            android:icon="@drawable/ic_nav_location"/>
+    </group>
 
+    <group android:id="@+id/line3">
+        <item
+            android:id="@+id/nav_pur"
+            android:title="Purchasing"
+            android:icon="@drawable/ic_nav_stock_24"/>
+        <item
+            android:id="@+id/nav_sales"
+            android:title="Sales"
+            android:icon="@drawable/ic_nav_stock_24"/>
+        <item
+            android:id="@+id/nav_over"
+            android:title="Overheads"
+            android:icon="@drawable/ic_nav_stock_24"/>
+        <item
+            android:id="@+id/nav_prod"
+            android:title="Production Event"
+            android:icon="@drawable/ic_nav_stock_24"/>
 
+        <item
+            android:id="@+id/nav_write"
+            android:title="Write off"
+            android:icon="@drawable/ic_nav_stock_24"/>
+
+        <item
+            android:id="@+id/nav_stocktaking"
+            android:title="Stock Taking"
+            android:icon="@drawable/ic_nav_stock_24"/>
+    </group>
+
+    <group android:id="@+id/line4">
+        <item
+            android:id="@+id/nav_cust"
+            android:title="Customers"
+            android:icon="@drawable/ic_nav_stock_24"/>
+
+        <item
+            android:id="@+id/nav_sup"
+            android:title="Suppliers"
+            android:icon="@drawable/ic_nav_stock_24"/>
+
+        <item
+            android:id="@+id/nav_units"
+            android:title="Units"
+            android:icon="@drawable/ic_nav_stock_24"/>
+
+        <item
+            android:id="@+id/nav_rep"
+            android:title="Recipes"
+            android:icon="@drawable/ic_nav_stock_24"/>
+    </group>
+
+    <group android:id="@+id/line5">
+        <item
+            android:id="@+id/nav_sett"
+            android:title="Settings"
+            android:icon="@drawable/ic_nav_document_24"/>
+        <item
+            android:id="@+id/nav_mess"
+            android:title="Messaes"
+            android:icon="@drawable/ic_nav_document_24"/>
+        <item
+            android:id="@+id/nav_help"
+            android:title="Help"
+            android:icon="@drawable/ic_nav_document_24"/>
+    </group>
 
 </menu>
