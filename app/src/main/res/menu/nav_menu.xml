@@ -24,7 +24,7 @@
         <item
             android:id="@+id/REP"
             android:title="Reports"
-            android:icon="@drawable/ic_nav_location"/>
+            android:icon="@drawable/ic_nav_stock_24"/>
     </group>
 
     <group android:id="@+id/line3">
