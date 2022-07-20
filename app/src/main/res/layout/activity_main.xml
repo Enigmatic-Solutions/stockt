@@ -12,27 +12,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-   <include android:id="@+id/tool_bar" layout="@layout/customtoolbar"/>
+        <Button
+            android:id="@+id/btnInventory"
+            android:layout_width="142dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="73dp"
+            android:text="Inventory View"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnStockView" />
 
-    <Button
-        android:id="@+id/btnIssueView"
-        android:layout_width="141dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="120dp"
-        android:text="IssueView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIssue" />
+        <include android:id="@+id/tool_bar" layout="@layout/customtoolbar"/>
 
-    <Button
-        android:id="@+id/btnStockView"
-        android:layout_width="142dp"
-        android:layout_height="107dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="120dp"
-        android:text="Stock View"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+        <Button
+            android:id="@+id/btnIssueView"
+            android:layout_width="141dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="120dp"
+            android:text="IssueView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnIssue" />
+
+        <Button
+            android:id="@+id/btnStockView"
+            android:layout_width="142dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="120dp"
+            android:text="Stock View"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 
     <Button
         android:id="@+id/btnIssue"
@@ -54,17 +64,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="52dp"
+            android:text="Alert"
+            app:layout_constraintStart_toEndOf="@+id/btnInventory"
+            app:layout_constraintTop_toBottomOf="@+id/btnIssueView" />
+
+        <Button
+            android:id="@+id/btnLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="37dp"
+            android:text="Language"
+            app:layout_constraintStart_toEndOf="@+id/btnInventory"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.google.android.material.navigation.NavigationView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:fitsSystemWindows="true"
-            app:headerLayout="@layout/nav_header"
-            app:menu="@menu/nav_menu"
-            android:id="@+id/navView"/>
-
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:id="@+id/navView"/>
 
 
 

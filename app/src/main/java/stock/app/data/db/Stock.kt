@@ -11,8 +11,14 @@ data class Stock(
      var itemName:String?=null,
      var stockBal:Int?=null,
      var itemImage:String?=null
-
 )
 
-{
-}
+
+
+data class LotInventory(
+    var itemName:String?=null,
+    var lotId:Int,
+    var lotQty:Int?=null,
+    var lotBal:Int?=null,
+    var itemImage:String?=null
+)

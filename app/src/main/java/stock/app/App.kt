@@ -31,28 +31,22 @@
 package stock.app
 
 import android.app.Application
+import android.content.Context
 import dagger.hilt.android.HiltAndroidApp
-import stock.app.data.db.StockDatabase
 
 
-lateinit var db: StockDatabase
+//lateinit var db: StockDatabase
 
 @HiltAndroidApp
 class App : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        context = applicationContext
+    }
 
     companion object {
-        lateinit var INSTANCE: App
+        private var context: Context? = null
+        val appContext: Context?
+            get() = context
     }
-
-    init {
-        INSTANCE = this
-    }
-
-//    override fun onCreate() {
-//        super.onCreate()
-//        db = StockDatabase.getInstance(this)
-//        //kp=MovieDatabase.getInstance(this)
-//        INSTANCE = this
-//    }
-
 }

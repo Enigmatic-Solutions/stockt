@@ -18,4 +18,7 @@ suspend fun insertStock(stock: Stock)
 suspend fun getAllStockItems(): List<Stock>
 
 
+@Query("select * from stock,StockLot where Stock.stockId=StockLot.stockId")
+suspend fun getLotInventory(): List<LotInventory>
+
 }

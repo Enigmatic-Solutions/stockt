@@ -49,6 +49,11 @@ class Stockview : AppCompatActivity() {
                 binding.recyclestock.adapter =StockAdapter(Stock)
             })
 
+
+            mstockViewModel.getDataset().observe(this,{inventory->
+                binding.textInventory.text=inventory.get(0).itemName.toString()
+            })
+
         binding.button.setOnClickListener{
 
             var stk: Stock

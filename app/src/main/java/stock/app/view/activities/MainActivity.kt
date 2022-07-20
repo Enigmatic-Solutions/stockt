@@ -2,7 +2,6 @@ package stock.app.view.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -56,6 +55,11 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        binding.btnInventory.setOnClickListener{
+            val intent = Intent(this, InventoryView::class.java)
+            startActivity(intent)
+        }
+
         val drawyerLayout:DrawerLayout=findViewById(R.id.drawerlayout)
         val navView:NavigationView=findViewById(R.id.navView)
 
@@ -75,14 +79,23 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_prod -> Toast.makeText(this,"Home Icon Selected",Toast.LENGTH_SHORT).show()
                 R.id.nav_stocktaking -> Toast.makeText(this,"Stock Icon Selected",Toast.LENGTH_SHORT).show()
             }
-
             true
         }
 
 
+        binding.btnLanguage.setOnClickListener {
+            val intent = Intent(this, Languages::class.java)
+            startActivity(intent)
+
+
+
+
+
+
+        }
+
+
     }
-
-
 
 
 }
